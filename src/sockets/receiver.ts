@@ -19,4 +19,5 @@ export const client = clientPerformCallback((m) => ({
     }) => void
   >(),
   joinedRoom: m<(data: { userId: number }) => void>(),
+  leftRoom: m<(data: { userId: number }) => void>(),
 }));
