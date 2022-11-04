@@ -63,4 +63,8 @@ function App() {
   );
 }
 
+client.joinedRoom = ({ userId }) => {
+  console.debug("joinedRoom", userId);
+};
+
 export default App;
