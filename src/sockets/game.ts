@@ -37,12 +37,8 @@ export const joinRoom = (roomId: string, userId: number) => {
 export const leaveRoom = (roomId: string, userId: number) => {
   socket.emit("leaveRoom", { roomId, userId });
 };
-export const createRoom = (
-  roomId: string,
-  userId: number,
-  prevRoomId?: string
-) => {
-  socket.emit("createRoom", { roomId, userId, prevRoomId });
+export const createRoom = (userId: number, prevRoomId: string) => {
+  socket.emit("createRoom", { userId, prevRoomId });
 };
 export const startGame = (
   roomId: string,

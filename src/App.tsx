@@ -45,9 +45,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => createRoom("newroom", userId, "req")}>
-          create room
-        </button>
+        <button onClick={() => createRoom(userId, "req")}>create room</button>
         <button onClick={() => startGame(newRoom, userId, "easy", [userId])}>
           start game {newRoom}
         </button>
